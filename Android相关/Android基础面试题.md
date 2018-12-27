@@ -9,7 +9,7 @@
     应用程序时，并不希望每次都要处理这个对话框。因此
     ，在程序里对响应性能的设计很重要这样，系统不会显
     示ANR给用户。不同的组件发生ANR的时间不一样，主线
-    程（Activity、Service）是5秒，BroadCastReceiver 是10 秒。
+    程Activity是5秒，BroadCastReceiver 是10 秒,Service是20。
     解决方案：
     将所有耗时操作，比如访问网络，Socket通信，查询大
     量SQL 语句，复杂逻辑计算等都放在子线程中去，然
